@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Design Agency's website.">
+    <meta name="keywords" content="Design, Web Design, Web Development, Marketing, Digital Marketing, SEO Optimization">
+    <meta name="author" content="Dimitrije Savatic">
+    <link rel="icon" href="images//logo.png" />
+    <title>Snow Storm | Welcome</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="author">
+      <div class="author__left">
+        <p class="author__index">Index No. 9/20</p>
+        <h1 class="author__name">Dimitrije Savatic</h1>
+        <div id="bio"><h2>Find out more...</h2></div>
+        <p class="author__bio">Born in Belgrade. Grew up in Obrenovac, where he attended Primary and Technical High School. After High School, he finished two years of Faculty of Mechanical Engineering. After leaving The Faculty od Mechanics, he applied to ICT College which he is currently attending.</p>
+        <div class="author__cta-btn">
+          <a href="index.html" class="author__btn"><i class="fas fa-chevron-left"></i><p>Back to Home</p></a>
+        </div>
+      </div>
+      <div class="author__right">
+        <div class="author__image"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        $('#bio').on('click', function(){
+          $('.author__bio').css('display', 'flex');
+          $('#bio').css('display', 'none');
+        });
+        $('.author__bio').on('click', function(){
+          $('.author__bio').css('display', 'none');
+          $('#bio').css('display', 'flex');
+        })
+      });
+    </script>
+  </body>
+  </html>

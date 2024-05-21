@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Snow Storm's website.">
+    <meta name="keywords" content="Design, Web Design, Web Development, Marketing, Digital Marketing, SEO Optimization">
+    <meta name="author" content="Dimitrije Savatic">
+    <link rel="icon" href="images//logo.png" />
+    <title>Snow Storm | Welcome</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar__left">
+        <a href="index.html">
+          <img src="images/logo.png" alt="log" class="navbar__logo" />
+        </a>
+        <ul class="navbar__links">
+          <li class="navbar__link"><a href="index.html">Home</a></li>
+          <li class="navbar__link"><a href="#products">Products</a></li>
+          <li class="navbar__link"><a href="#contact-us">Contact</a></li>
+          <li class="navbar__link"><a href="author.html">Author</a></li>
+        </ul>
+      </div>
+      <div class="navbar__right">
+        <a href="cart.html" class="navbar__shop">
+          <p class="navbar__shop-icon"><i class="fas fa-shopping-cart"></i></p>
+          <span class="navbar__count">0</span>
+        </a>
+        <div class="navbar__burger">
+          <div class="navbar__b-line"></div>
+          <div class="navbar__b-line"></div>
+          <div class="navbar__b-line"></div>
+        </div>
+      </div>
+      <div class="navbar__progress"></div>
+    </nav>
+    <!-- Alter navbar -->
+    <div class="alter-nav">
+      <a class="alter-nav__link" href="index.html">Home</a>
+      <a class="alter-nav__link" href="#products">Products</a>
+      <a class="alter-nav__link" href="#contact-us">Contact</a>
+      <a class="alter-nav__link" href="author.html">Author</a>
+    </div>
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__content">
+          <div class="hero__hello">Welcome to</div>
+          <h1 class="hero__title">Snow Storm</h1>
+          <p class="hero__desc">
+            Share Joy, Share Love, Share Laughs. Shop gifts of warmth.
+          </p>
+          <a href="#" class="hero__cta">Our Products</a>
+          <video autoplay loop muted class="hero__video">
+            <source src="images/hero.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero__socials">
+          <div class="hero__soc-line"></div>
+          <div class="hero__links">
+            <a href="#" class="hero__link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hero__link"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="hero__soc-line"></div>
+        </div>
+        <div class="hero__scroll-downs">
+          <div class="hero__mousey">
+            <div class="hero__scroller"></div>
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section class="about">
+        <div class="about__left">
+          <p class="about__we">We Are</p>
+          <h2 class="about__title">Company Name</h2>
+          <p class="about__desc">
+            KEEPING THE PLANET COLD AND THE PEOPLE ON IT WARM
+          </p>
+          <p class="about__desc">
+            “We are steadfast in our commitment to strengthening our communities, protecting our planet and working towards a future for generations to come.” 
+            – Dana White, President & CEO &nbsp;Snow Storm
+          </p>
+        </div>
+        <div class="about__right">
+          <div class="about__image-container">
+            <img
+              src="images/hero.jpg"
+              alt="winter jacket"
+              class="about__image"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Products -->
+      <section class="products">
+        <p class="products__our">What we offer</p>
+        <h2 class="products__title">Our products</h2>
+        <div class="products__container" id="productsContainer"></div>
+      </section>
+      <!-- Contact Us -->
+      <section class="contact-us">
+        <div class="contact-us__left">
+        <h2 class="contact-us__title">Contact Us</h2>
+          <div class="contact-us__desc">
+            <div class="contact-us__info">
+              <p><i class="fas fa-phone-alt"></i> +381 64 123 45 67</p>
+            </div>
+            <div class="contact-us__info">
+              <p><i class="fas fa-envelope"></i></i> dimitrije&#46;savatic&#64;gmail&#46;com</p>
+            </div>
+            <div class="contact-us__info">
+              <p><i class="fas fa-map-marker-alt"></i> 114 Fourth Avenue, Manhattan</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-us__right">
+          <form class="contact-us__form" id="form">
+            <div class="contact-us__bar">
+              <label for="name">Name:</label>
+              <input type="text" id="name" class="contact-us__bar contact-us__input">
+              <p class="errorDisplay"><i class="fas fa-exclamation alert"></i>Name must be longer than 3 characters.</p>
+            </div>
+            <div class="contact-us__bar">
+              <label for="email">Email:</label>
+              <input type="text" id="email" class="contact-us__bar contact-us__input" placeholder=" @gmail.com">
+              <p class="errorDisplay"><i class="fas fa-exclamation alert"></i>Email is incorrect.</p>
+            </div>
+            <div class="contact-us__bar">
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" class="contact-us__bar contact-us__input">
+            </div>
+            <div class="contact-us__bar">
+              <label for="message">Message:</label>
+              <textarea name="message" id="message" cols="20" rows="3" class="contact-us__bar contact-us__input"></textarea>
+              <p class="errorDisplay"><i class="fas fa-exclamation alert"></i>You have to write something.</p>
+            </div>
+            <div class="contact-us__bar">
+              <input type="button" value="Send Message" class="btn" id="contact-btn" onclick="contactCheck()">
+            </div>
+            <div id="success" class="contact-us__bar"></div>
+          </form>
+        </div>
+      </section>
+    
+    </main>
+    <!-- Back to top arrow -->
+    <div class="back-arrow" onclick="toTop()">
+      <p class="back-arrow__icon">
+        <i class="fas fa-chevron-up"></i>
+      </p>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-container__icons">
+        <a href="#" class="footer-container__icon"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" class="footer-container__icon"><i class="fab fa-instagram-square"></i></a>
+        <a href="#" class="footer-container__icon"><i class="fab fa-twitter-square"></i></a>
+        </div>
+        <div class="footer-container__body">
+          <a href="#about">About</a>
+          <a href="sitemap.xml">Sitemap</a>
+          <a href="documentation.pdf" target="_blank">Documentation</a>
+        </div>
+      </div>
+      <div class="footer-container__bottom">
+        <p>Copyright&copy; Dimitrije Savatic 9/20. | All rights reserved.</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/cartLogic.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
